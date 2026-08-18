@@ -1,0 +1,1 @@
+-- @NoDataRollback(table=users, reason="DML operations (INSERT, UPDATE, DELETE) cannot be fully reversed")

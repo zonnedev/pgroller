@@ -1,0 +1,1 @@
+-- no rollback coverage provided (intentional for demo)

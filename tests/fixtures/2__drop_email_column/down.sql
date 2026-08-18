@@ -1,0 +1,5 @@
+-- @NoSchemaRollback(column=users.email, reason="email data cannot be reconstructed")
+-- missing: index=users_email_key
+-- missing: constraint=users.users_email_key
+-- @NoSchemaRollback(constraint=users.2200_16384_3_not_null, reason="NOT NULL constraint on dropped column")
+-- @NoDataRollback(table=users, reason="seed data includes email which no longer exists after migration")

@@ -1,0 +1,12 @@
+[migrations]
+dir = "tests/suite/suite-1/migrations"
+
+[database]
+postgres_version = "15"
+extensions = []
+schema = "public"
+
+[test]
+timeout = 30
+continue_on_failure = true
+reset_strategy = "drop_schema"

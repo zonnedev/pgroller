@@ -1,0 +1,10 @@
+CREATE TABLE labels (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(80) NOT NULL UNIQUE
+);
+
+CREATE TABLE task_labels (
+    task_id BIGINT NOT NULL REFERENCES tasks(id) ON DELETE CASCADE,
+    label_id BIGINT NOT NULL REFERENCES labels(id) ON DELETE CASCADE,
+    PRIMARY KEY (task_id, label_id)
+);

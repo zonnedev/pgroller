@@ -1,0 +1,11 @@
+[migrations]
+dir = "tests/fixtures"
+
+[database]
+postgres_version = "15"
+extensions = []
+schema = "public"
+
+[test]
+timeout = 30
+continue_on_failure = true
